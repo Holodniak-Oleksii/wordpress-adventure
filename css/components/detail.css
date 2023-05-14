@@ -1,0 +1,30 @@
+.detail {
+  gap: 24px;
+  margin-top: 100px;
+  height: fit-content;
+}
+.detail_image {
+  height: 100%;
+  width: calc(50% - 12px);
+  object-fit: cover;
+  object-position: center;
+  height: 400px;
+  float: left;
+  margin-right: 16px;
+}
+.detail_info {
+  width: 100%;
+}
+.detail_info h2 {
+  color: #222222;
+  font-size: 32px;
+  line-height: 1.2em !important;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.detail_info p {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+}

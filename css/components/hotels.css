@@ -1,0 +1,69 @@
+.hotels {
+  width: 100%;
+  height: 100vh;
+  max-height: 700px;
+  display: flex;
+  background: url("../../assets/images/apartment.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+}
+
+.hotel_max {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hotel_row {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+.hotel_card {
+  box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.hotel_destinations {
+  width: 100%;
+}
+.hotel_image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.hotel_details {
+  padding: 16px;
+}
+.hotel_title {
+  color: #222222;
+  line-height: 1.2em;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.hotel_package-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* gap: 16px; */
+}
+.hotel_item {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotel_item:last-child {
+  padding-top: 20px;
+  border-bottom: 1px solid #ffffff;
+}

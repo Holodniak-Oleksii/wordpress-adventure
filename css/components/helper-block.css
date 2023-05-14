@@ -1,0 +1,40 @@
+.help {
+  height: fit-content;
+  display: flex;
+  height: calc(100vh - 72px);
+  max-height: 500px;
+  align-items: flex-start;
+  justify-self: space-between;
+  gap: 16px;
+  background-color: #c9c0c02a;
+}
+.help-text {
+  width: calc(50% - 16px);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+.help-text h2 {
+  color: #222222;
+  font-size: 32px;
+  line-height: 1.2em !important;
+  font-weight: 600;
+}
+.help-text p {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+}
+.help-text a {
+}
+.help-image {
+  width: calc(50% - 16px);
+
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 100%;
+  object-fit: cover;
+}

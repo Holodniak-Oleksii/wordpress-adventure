@@ -1,0 +1,134 @@
+.scroll {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-2520px);
+    transform: translateX(-2520px);
+  }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-2520px);
+    transform: translateX(-2520px);
+  }
+}
+.scroll__separator {
+  font-size: 0;
+  line-height: 0;
+}
+.scroll__images {
+  width: 100%;
+  transition: all 0.4s ease;
+  height: 150px;
+  object-fit: cover;
+}
+.scroll__under {
+  height: 10%;
+  margin: 2% auto;
+}
+.scroll__move {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.scroll__move::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotateZ(180deg);
+}
+.scroll__move::before {
+  left: 0;
+  top: 0;
+}
+.scroll .scroll__line {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: flex-start;
+  gap: 24px;
+  width: 5040px;
+}
+.scroll__item {
+  overflow: hidden;
+  width: 260px;
+  transition: all 0.4s ease;
+  margin: 15px 0;
+  border: 1px solid rgba(134, 130, 130, 0.269);
+}
+.scroll_content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.scroll__item:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.scroll__item:hover .scroll__images {
+  filter: brightness(90%);
+}
+.scroll__lab {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000;
+  letter-spacing: 0.03em;
+}
+.scroll__name {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+}
+.scroll__name::before {
+  content: url(../../assets/icons/location.svg);
+}
+.star::before {
+  content: url(../../assets/icons/star.svg);
+  margin-left: 40px;
+}
+.star__modal::before {
+  content: url(../../assets/icons/star.svg);
+  margin: 10px 0;
+}
+.scroll__time {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000;
+  letter-spacing: 0.03em;
+  opacity: 0.8;
+}
+.scroll__price {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #000;
+  letter-spacing: 0.03em;
+}
