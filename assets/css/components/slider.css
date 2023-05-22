@@ -105,14 +105,14 @@
   opacity: 0.8;
 }
 .scroll__name::before {
-  content: url(../../assets/icons/location.svg);
+  content: url("https://artgallery-bucket.s3.eu-central-1.amazonaws.com/logo/location.svg");
 }
 .star::before {
-  content: url(../../assets/icons/star.svg);
+  content: url("https://artgallery-bucket.s3.eu-central-1.amazonaws.com/logo/star.svg");
   margin-left: 40px;
 }
 .star__modal::before {
-  content: url(../../assets/icons/star.svg);
+  content: url("https://artgallery-bucket.s3.eu-central-1.amazonaws.com/logo/star.svg");
   margin: 10px 0;
 }
 .scroll__time {

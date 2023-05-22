@@ -35,12 +35,12 @@
   justify-content: flex-start;
   align-items: center;
 }
-.header_link a {
+.header_menu a {
   color: #000;
   font-size: 14px;
   font-weight: 400;
   transition: all 0.4s linear;
 }
-.header_link a:hover {
+.header_menu a:hover {
   color: #646060;
 }
